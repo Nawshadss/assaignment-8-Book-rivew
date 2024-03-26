@@ -1,0 +1,80 @@
+[
+  {
+    "bookId": 1,
+    "bookName": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "image": "https://img.freepik.com/free-vector/bike-guy-wattpad-book-cover_23-2149452163.jpg?w=826&t=st=1711459956~exp=1711460556~hmac=868e96d3ab010d9ba3d76f97aa9ee829e6ed166e4c45baceaa50c31db62f5b81",
+    "review": "A timeless classic that explores themes of racial injustice and moral growth.",
+    "totalPages": 281,
+    "rating": 4.5,
+    "category": "Fiction",
+    "tags": ["Drama", "Coming-of-age", "Legal"],
+    "publisher": "J. B. Lippincott & Co.",
+    "yearOfPublishing": 1960
+  },
+  {
+    "bookId": 2,
+    "bookName": "1984",
+    "author": "George Orwell",
+    "image": "https://img.freepik.com/free-psd/realistic-book-cover-presentation_1310-24.jpg?w=826&t=st=1711459995~exp=1711460595~hmac=d0892c55894748729bbc793761d2fceacfe3112a3911f8ffa621f835f8679e9b",
+    "review": "A dystopian masterpiece that serves as a chilling warning about totalitarianism.",
+    "totalPages": 328,
+    "rating": 4.8,
+    "category": "Fiction",
+    "tags": ["Dystopian", "Political", "Social Commentary"],
+    "publisher": "Secker & Warburg",
+    "yearOfPublishing": 1949
+  },
+  {
+    "bookId": 3,
+    "bookName": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "image": "https://img.freepik.com/free-vector/good-paper-wattpad-book-cover_23-2149452379.jpg?w=826&t=st=1711460136~exp=1711460736~hmac=1dfa14b61140aea3570c7df06c260f1f96a0a4877c84b32b808fdcb706d10e40",
+    "review": "A witty and romantic novel that continues to captivate readers with its timeless charm.",
+    "totalPages": 279,
+    "rating": 4.7,
+    "category": "Fiction",
+    "tags": ["Romance", "Satire", "British Literature"],
+    "publisher": "T. Egerton, Whitehall",
+    "yearOfPublishing": 1813
+  },
+  {
+    "bookId": 4,
+    "bookName": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "image": "https://i.pinimg.com/564x/11/17/3d/11173d2c0d53b80ad69f1e047615d205.jpg",
+    "review": "A beautifully crafted tale of wealth, ambition, and the American Dream.",
+    "totalPages": 180,
+    "rating": 4.6,
+    "category": "Fiction",
+    "tags": ["Classic", "1920s", "American Literature"],
+    "publisher": "Charles Scribner's Sons",
+    "yearOfPublishing": 1925
+  },
+  {
+    "bookId": 5,
+    "bookName": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "image": "https://i.pinimg.com/736x/0a/64/f3/0a64f39c2c580704e917ce6f0f4108b3.jpg",
+    "review": "A provocative novel that captures the disillusionment of adolescence.",
+    "totalPages": 277,
+    "rating": 4.4,
+    "category": "Fiction",
+    "tags": ["Coming-of-age", "American Literature", "Cultural Critique"],
+    "publisher": "Little, Brown and Company",
+    "yearOfPublishing": 1951
+  },
+  {
+    "bookId": 6,
+    "bookName": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "image": "https://robbreport.com/wp-content/uploads/2021/10/Scribe-VoiceOCT_Image1.jpg?w=1000",
+    "review": "An enchanting adventure set in the fantastical world of Middle-earth.",
+    "totalPages": 310,
+    "rating": 4.9,
+    "category": "Fiction",
+    "tags": ["Fantasy", "Adventure", "Quest"],
+    "publisher": "Allen & Unwin",
+    "yearOfPublishing": 1937
+  }
+]

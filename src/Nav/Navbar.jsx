@@ -36,7 +36,7 @@ const Navbar = () => {
               <NavLink className="font-semibold" to="/listed-books">
                 Listed Books
               </NavLink>
-              <NavLink className="font-semibold" t0="/pages-to-read">
+              <NavLink className="font-semibold" to="/pages-to-read">
                 Pages to Read
               </NavLink>
             </ul>
