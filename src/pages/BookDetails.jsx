@@ -1,7 +1,43 @@
-import React from "react";
+import React, { useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import getLocalStorage from "../util/getlocal";
+import setItemLocal from "../util/setlocal";
+import "react-toastify/dist/ReactToastify.css";
 
-const BookDetails = ({ params }) => {
+const BookDetails = () => {
+  const [read, setRead] = useState([]);
+  const [addWishList, setWishLish] = useState([]);
+
+  const haldeRead = () => {
+    const getlocal = getLocalStorage("read");
+
+    console.log(getlocal);
+    const isExist = getlocal.find((data) => data.bookId === bookId);
+    if (isExist) {
+      toast("Book alredy Exist");
+    } else {
+      setItemLocal("read", oneBook);
+      toast("Book added to read");
+    }
+  };
+
+  const hanldeWishList = () => {
+    const getlocal = getLocalStorage("read");
+    const getWish = getLocalStorage("wish");
+
+    console.log(getlocal);
+    const isExist = getlocal.find((data) => data.bookId === bookId);
+    const wishExist = getWish.find((data) => data.bookId === bookId);
+    if (isExist) {
+      toast("Can not be added in wihs list ");
+    } else if (wishExist) {
+      toast("Book alredy Exist in Wish List ");
+    } else {
+      setItemLocal("wish", oneBook);
+      toast("Book  added to Wish List ");
+    }
+  };
   const param = useParams();
   const bookdetails = useLoaderData();
   console.log(bookdetails, param.id);
@@ -18,6 +54,7 @@ const BookDetails = ({ params }) => {
     totalPages,
     publisher,
     yearOfPublishing,
+    bookId,
   } = oneBook;
   return (
     <div>
@@ -60,12 +97,19 @@ const BookDetails = ({ params }) => {
             Rating: <span className="font-bold">{rating}</span>
           </p>
           <div className="space-x-5">
-            <button className="p-4 border rounded-lg font-semibold">
+            <button
+              className="p-4 border rounded-lg font-semibold"
+              onClick={haldeRead}
+            >
               Read
             </button>
-            <button className="p-4 border rounded-lg bg-[#50B1C9] text-white font-semibold">
+            <button
+              onClick={hanldeWishList}
+              className="p-4 border rounded-lg bg-[#50B1C9] text-white font-semibold"
+            >
               Wish List
             </button>
+            <ToastContainer />
           </div>
         </div>
       </div>
