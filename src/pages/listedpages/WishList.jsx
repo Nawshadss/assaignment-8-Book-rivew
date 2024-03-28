@@ -2,22 +2,22 @@ import React, { useEffect, useState } from "react";
 import getLocalStorage from "../../util/getlocal";
 import Card from "../../components/card/Card";
 
-const ReadBooks = () => {
-  const [readbook, setReadBooks] = useState([]);
+const WishList = () => {
+  const [wishlist, setWishlist] = useState([]);
   useEffect(() => {
-    const getLocalItem = getLocalStorage("read");
+    const getLocalItem = getLocalStorage("wish");
     console.log(getLocalItem);
-    setReadBooks(getLocalItem);
+    setWishlist(getLocalItem);
   }, []);
 
-  console.log(readbook);
+  console.log(wishlist);
   return (
     <div className="space-y-7">
-      {readbook.map((data) => (
+      {wishlist.map((data) => (
         <Card key={data.bookId} data={data}></Card>
       ))}
     </div>
   );
 };
 
-export default ReadBooks;
+export default WishList;

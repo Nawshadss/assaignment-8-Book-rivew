@@ -1,4 +1,6 @@
 import React from "react";
+import { NavLink, Navigate, Outlet, useNavigate } from "react-router-dom";
+import "../Nav/Navbar.css";
 
 const ListedBooks = () => {
   return (
@@ -9,14 +11,23 @@ const ListedBooks = () => {
       <div>drop down</div>
       <br />
 
-      <div role="tablist" className="tabs tabs-lifted">
-        <a role="tab" className="tab">
-          Normal
-        </a>
-        <a role="tab" className="tab tab-active">
-          Normal
-        </a>
+      <div id="nav" role="tablist" className="tabs tabs-lifted">
+        <NavLink
+          to="/listed-books/read"
+          role="tab"
+          className="tab  flex items-center"
+        >
+          Read
+        </NavLink>
+        <NavLink
+          to="/listed-books/wish-list"
+          role="tab"
+          className="tab tab-active flex items-center"
+        >
+          WishList
+        </NavLink>
       </div>
+      <Outlet></Outlet>
     </div>
   );
 };
