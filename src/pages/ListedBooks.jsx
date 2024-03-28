@@ -1,5 +1,4 @@
-import React from "react";
-import { NavLink, Navigate, Outlet, useNavigate } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 import "../Nav/Navbar.css";
 
 const ListedBooks = () => {

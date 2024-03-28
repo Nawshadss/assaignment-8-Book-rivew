@@ -30,7 +30,10 @@ const Card = ({ data }) => {
         <div className="flex">
           <div className="flex gap-2">
             {tags.map((data) => (
-              <p className="text-[#23BE0A] bg-[#23BE0A10] p-2 px-3 rounded-3xl font-semibold text-[12px]">
+              <p
+                key={data.bookId}
+                className="text-[#23BE0A] bg-[#23BE0A10] p-2 px-3 rounded-3xl font-semibold text-[12px]"
+              >
                 #{data}
               </p>
             ))}

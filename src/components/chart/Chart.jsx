@@ -21,8 +21,6 @@ export default function Chart() {
     bookPages.push(page);
   }
 
-  console.log(bookName, bookPages);
-
   return (
     <div>
       <Bar

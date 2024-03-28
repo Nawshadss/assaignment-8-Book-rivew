@@ -1,9 +1,8 @@
 import React from "react";
-import { Link, Navigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Books = ({ book }) => {
   const { author, bookName, image, category, tags, rating, bookId } = book;
-  console.log(book);
 
   return (
     <Link to={`/book/details/${bookId}`}>
