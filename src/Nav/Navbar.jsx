@@ -48,7 +48,7 @@ const Navbar = () => {
             <NavLink className="font-semibold" to="/">
               Home
             </NavLink>
-            <NavLink className="font-semibold" to="/listed-books">
+            <NavLink className="font-semibold" to="/listed-books/wish-list">
               Listed Books
             </NavLink>
             <NavLink className="font-semibold" to="/pages-to-read">
