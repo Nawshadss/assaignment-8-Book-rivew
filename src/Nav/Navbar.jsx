@@ -38,6 +38,9 @@ const Navbar = () => {
               <NavLink className="font-semibold" to="/pages-to-read">
                 Pages to Read
               </NavLink>
+              <NavLink className="font-semibold" to="/sign-in">
+                Sign In
+              </NavLink>
             </ul>
           </div>
           <a className="btn btn-ghost text-3xl font-bold">Book World</a>
@@ -52,6 +55,9 @@ const Navbar = () => {
             </NavLink>
             <NavLink className="font-semibold" to="/pages-to-read">
               Pages to Read
+            </NavLink>
+            <NavLink className="font-semibold" to="/sign-in">
+              Sign In
             </NavLink>
           </ul>
         </div>
