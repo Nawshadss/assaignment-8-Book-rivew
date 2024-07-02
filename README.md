@@ -16,4 +16,8 @@ BookStore is a web-based application built to streamline the process of managing
 - Secure payment processing for online purchases.
 - Admin panel for managing inventory, processing orders, and analyzing sales data.
 
-If you want to run in  locally just clone the repository and run npm run dev in the terminel
+If you want to run in  locally just clone the repository and run npm run dev in the terminal
+
+
+##Problem Faced
+-faced authen cation problem didnt know how to do it on my own so then used the fire base auth for the solution.
